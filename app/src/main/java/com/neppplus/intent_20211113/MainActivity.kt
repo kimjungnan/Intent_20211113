@@ -20,5 +20,18 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        btnSendMessage.setOnClickListener {
+//            화면이동 및 입력한 문구 가지고 이동
+//            입력한 내용 변수에 담아두자
+
+            val inputMessage = editMessage.text.toString()
+
+//            화면을 이동
+            val myIntent3 = Intent(this, ViewMessageActivity::class.java)
+//            inputMessage 같이 보내기
+            myIntent3.putExtra("message",inputMessage)
+            startActivity(myIntent3)
+        }
+
     }
 }
