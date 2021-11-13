@@ -4,11 +4,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:padding="20dp"
-    android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
     <TextView
@@ -29,52 +29,62 @@
         android:layout_height="wrap_content"
         android:hint="아무말이나 입력" />
 
-  <Button
-      android:id="@+id/btnSendMessage"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="문구 전송 버튼" />
-
-
-
+    <Button
+        android:id="@+id/btnSendMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="문구 전송 버튼" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
+        android:orientation="vertical" >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="닉네임"/>
+            android:text="닉네임" />
 
-      <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="닉네임 라니" />
-
-        <TextView
-            android:layout_width="0dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:orientation="horizontal">
 
-      <Button
-        android:id="@+id/btnNickName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="닉네임 변경" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="닉네임 라니" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnNickName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="닉네임 변경" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical" >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="이메일"/>
+            android:text="이메일" />
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -91,6 +101,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="이메일 변경" />
+
+    </LinearLayout>
 
     </LinearLayout>
 
