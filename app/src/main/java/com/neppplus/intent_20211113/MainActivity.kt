@@ -6,6 +6,12 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
+//    멤버변수
+    val REQ_FOR_NICKNAME = 1000
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -31,6 +37,18 @@ class MainActivity : AppCompatActivity() {
 //            inputMessage 같이 보내기
             myIntent3.putExtra("message",inputMessage)
             startActivity(myIntent3)
+        }
+
+        btnNickName.setOnClickListener {
+
+            val myIntent = Intent(this,EditNickNameActivity::class.java)
+
+//             왕복여행을 하고 돌아오기 위한 구분 필요
+//            구별에 사용하는 숫자 필요. REQUEST_CODE 라고 부름
+
+            startActivityForResult(myIntent, REQ_FOR_NICKNAME )
+
+
         }
 
     }
