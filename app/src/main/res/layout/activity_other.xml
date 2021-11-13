@@ -5,23 +5,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:padding="20dp"
     android:gravity="center"
+    android:padding="20sp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".OtherActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="여기는 메인입니다"
-        android:textSize="20sp" />
+        android:text="여기는 다른화면입니다"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
 
     <Button
-        android:id="@+id/btnMoveToOther"
-        android:layout_width="match_parent"
+        android:id="@+id/btnReturnMain"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="다른화면으로 이동" />
+        android:text="버튼" />
 
 
 </LinearLayout>
