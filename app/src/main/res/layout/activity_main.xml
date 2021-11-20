@@ -121,6 +121,11 @@
         android:id="@+id/btnDial"
         android:text="전화걸기 (DIAL)"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCall"
+        android:text="전화걸기 (CALL)"/>
 
 
 </LinearLayout>

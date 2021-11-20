@@ -19,13 +19,24 @@ class MainActivity : AppCompatActivity() {
 
         btnDial.setOnClickListener { 
 //            입력한 전화번호 추츨(변수에 저장)
-            val inputPoneNum = editPhoneNum.text.toString()
+            val inputPhoneNum = editPhoneNum.text.toString()
 
 //            그 전화전호에 실제 전화 연결
-            val myUri = Uri.parse("tel:01062901236")
+            val myUri = Uri.parse("tel:${inputPhoneNum}")
             val myIntent = Intent( Intent.ACTION_DIAL, myUri )
             startActivity(myIntent)
         }
+
+        btnCall.setOnClickListener {
+//            입력한 전화번호 추츨(변수에 저장)
+            val inputPhoneNum = editPhoneNum.text.toString()
+
+//            그 전화전호에 실제 전화 연결
+            val myUri = Uri.parse("tel:${inputPhoneNum}")
+            val myIntent = Intent( Intent.ACTION_CALL, myUri )
+            startActivity(myIntent)
+        }
+
         
         btnMoveToOther.setOnClickListener {
 
