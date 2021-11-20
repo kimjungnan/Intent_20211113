@@ -1,6 +1,7 @@
 package com.neppplus.intent_20211113
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
@@ -18,9 +19,12 @@ class MainActivity : AppCompatActivity() {
 
         btnDial.setOnClickListener { 
 //            입력한 전화번호 추츨(변수에 저장)
-            
+            val inputPoneNum = editPhoneNum.text.toString()
+
 //            그 전화전호에 실제 전화 연결
-            
+            val myUri = Uri.parse("tel:01062901236")
+            val myIntent = Intent( Intent.ACTION_DIAL, myUri )
+            startActivity(myIntent)
         }
         
         btnMoveToOther.setOnClickListener {
