@@ -28,6 +28,14 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        btnNaverLink.setOnClickListener {
+
+            val myUri = Uri.parse("https://www.naver.com")
+            val myIntent = Intent( Intent.ACTION_VIEW, myUri )
+            startActivity(myIntent)
+
+        }
+
         btnDial.setOnClickListener { 
 //            입력한 전화번호 추츨(변수에 저장)
             val inputPhoneNum = editPhoneNum.text.toString()

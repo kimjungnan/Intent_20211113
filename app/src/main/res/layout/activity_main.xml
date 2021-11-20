@@ -133,6 +133,10 @@
         android:id="@+id/btnSms"
         android:text="문자보내기 (SENDTO)"/>
 
-
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnNaverLink"
+        android:text="네이버 사이트(VIEW)"/>
 
 </LinearLayout>
