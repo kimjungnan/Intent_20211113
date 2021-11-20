@@ -28,6 +28,14 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        btnKakatoStoreLink.setOnClickListener {
+
+            val myUri = Uri.parse("market:///details?id=com.kakao.talk&hl=ko&gl=US")
+            val myIntent = Intent( Intent.ACTION_VIEW, myUri )
+            startActivity(myIntent)
+
+        }
+
         btnNaverLink.setOnClickListener {
 
             val myUri = Uri.parse("https://www.naver.com")
