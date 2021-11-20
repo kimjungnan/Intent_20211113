@@ -107,5 +107,20 @@
 
     </LinearLayout>
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="연결할 전화번호를 입력"
+        android:text="01062901236"
+        android:id="@+id/editPhoneNum"
+        android:inputType="phone"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDial"
+        android:text="전화걸기 (DIAL)"/>
+
+
 
 </LinearLayout>
